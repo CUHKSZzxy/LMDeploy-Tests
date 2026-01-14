@@ -2,6 +2,7 @@ CUDA_VISIBLE_DEVICES=1,2 lmdeploy serve api_server $model_path \
     --reasoning-parser intern-s1 \
     --tool-call-parser intern-s1 \
     --model-name Intern-S1-mini \
+    --backend pytorch \
     --server-port 8002 \
     --tp 2
 
